@@ -268,8 +268,28 @@
 
           
 
+                    
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <!-- <span title="本文字数">39k</span> -->
+			  <span title="本文字数">
+                  字
+                </span>
+              
+
+          
+
         </div>
       </header>
+    
 
     
     
@@ -277,6 +297,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
+        
           <h1 id="SQLALchemy笔记"><a href="#SQLALchemy笔记" class="headerlink" title="SQLALchemy笔记"></a>SQLALchemy笔记</h1><h3 id="使用SQLAlchemy去连接数据库："><a href="#使用SQLAlchemy去连接数据库：" class="headerlink" title="使用SQLAlchemy去连接数据库："></a>使用SQLAlchemy去连接数据库：</h3><p>使用SQLALchemy去连接数据库，需要使用一些配置信息，然后将他们组合成满足条件的字符串：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">HOSTNAME = <span class="string">'127.0.0.1'</span></span><br><span class="line">PORT = <span class="string">'3306'</span></span><br><span class="line">DATABASE = <span class="string">'first_sqlalchemy'</span></span><br><span class="line">USERNAME = <span class="string">'root'</span></span><br><span class="line">PASSWORD = <span class="string">'root'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># dialect+driver://username:password@host:port/database</span></span><br><span class="line">DB_URI = <span class="string">"mysql+pymysql://&#123;username&#125;:&#123;password&#125;@&#123;host&#125;:&#123;port&#125;/&#123;db&#125;?charset=utf8"</span>.format(username=USERNAME,password=PASSWORD,host=HOSTNAME,port=PORT,db=DATABASE)</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
@@ -295,9 +316,12 @@
     
     
       <footer class="post-footer">
+        
+        
           <div class="post-eof"></div>
         
       </footer>
+    
   </div>
   
   
@@ -405,12 +429,47 @@
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">OneTeam</span>
+
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+	<span title="post.totalcount">
+     字 </span>
+    <!--<span title="站点总字数">12k</span>-->
+  
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
   <span class="post-meta-divider">|</span>
   <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.0</div>
 
         
+<div class="busuanzi-count">
+  <script pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+  
+    <span class="post-meta-divider">|</span>
+  
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+  
+</div>
 
 
 
