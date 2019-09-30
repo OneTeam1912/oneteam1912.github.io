@@ -56,18 +56,18 @@
   };
 </script>
 
-  <meta name="description" content="SQLALchemy笔记使用SQLAlchemy去连接数据库：使用SQLALchemy去连接数据库，需要使用一些配置信息，然后将他们组合成满足条件的字符串： 12345678HOSTNAME = &apos;127.0.0.1&apos;PORT = &apos;3306&apos;DATABASE = &apos;first_sqlalchemy&apos;USERNAME = &apos;root&apos;PASSWORD = &apos;root&apos;# dialect+drive">
+  <meta name="description" content="SQLALchemy笔记使用SQLAlchemy去连接数据库：使用SQLALchemy去连接数据库，需要使用一些配置信息，然后将他们组合成满足条件的字符串：12345678HOSTNAME = &apos;127.0.0.1&apos;PORT = &apos;3306&apos;DATABASE = &apos;first_sqlalchemy&apos;USERNAME = &apos;root&apos;PASSWORD = &apos;root&apos;# dialect+driver">
 <meta name="keywords" content="标签1,标签2,标签3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python Web 开发之SQLAlchemy详解">
 <meta property="og:url" content="http://yoursite.com/2019/09/22/PythonWeb开发/index.html">
 <meta property="og:site_name" content="OneTeam">
-<meta property="og:description" content="SQLALchemy笔记使用SQLAlchemy去连接数据库：使用SQLALchemy去连接数据库，需要使用一些配置信息，然后将他们组合成满足条件的字符串： 12345678HOSTNAME = &apos;127.0.0.1&apos;PORT = &apos;3306&apos;DATABASE = &apos;first_sqlalchemy&apos;USERNAME = &apos;root&apos;PASSWORD = &apos;root&apos;# dialect+drive">
+<meta property="og:description" content="SQLALchemy笔记使用SQLAlchemy去连接数据库：使用SQLALchemy去连接数据库，需要使用一些配置信息，然后将他们组合成满足条件的字符串：12345678HOSTNAME = &apos;127.0.0.1&apos;PORT = &apos;3306&apos;DATABASE = &apos;first_sqlalchemy&apos;USERNAME = &apos;root&apos;PASSWORD = &apos;root&apos;# dialect+driver">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-09-30T08:56:44.709Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python Web 开发之SQLAlchemy详解">
-<meta name="twitter:description" content="SQLALchemy笔记使用SQLAlchemy去连接数据库：使用SQLALchemy去连接数据库，需要使用一些配置信息，然后将他们组合成满足条件的字符串： 12345678HOSTNAME = &apos;127.0.0.1&apos;PORT = &apos;3306&apos;DATABASE = &apos;first_sqlalchemy&apos;USERNAME = &apos;root&apos;PASSWORD = &apos;root&apos;# dialect+drive">
+<meta name="twitter:description" content="SQLALchemy笔记使用SQLAlchemy去连接数据库：使用SQLALchemy去连接数据库，需要使用一些配置信息，然后将他们组合成满足条件的字符串：12345678HOSTNAME = &apos;127.0.0.1&apos;PORT = &apos;3306&apos;DATABASE = &apos;first_sqlalchemy&apos;USERNAME = &apos;root&apos;PASSWORD = &apos;root&apos;# dialect+driver">
   <link rel="canonical" href="http://yoursite.com/2019/09/22/PythonWeb开发/">
 
 
@@ -278,8 +278,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="SQLALchemy笔记"><a href="#SQLALchemy笔记" class="headerlink" title="SQLALchemy笔记"></a>SQLALchemy笔记</h1><h3 id="使用SQLAlchemy去连接数据库："><a href="#使用SQLAlchemy去连接数据库：" class="headerlink" title="使用SQLAlchemy去连接数据库："></a>使用SQLAlchemy去连接数据库：</h3><p>使用SQLALchemy去连接数据库，需要使用一些配置信息，然后将他们组合成满足条件的字符串：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">HOSTNAME = <span class="string">'127.0.0.1'</span></span><br><span class="line">PORT = <span class="string">'3306'</span></span><br><span class="line">DATABASE = <span class="string">'first_sqlalchemy'</span></span><br><span class="line">USERNAME = <span class="string">'root'</span></span><br><span class="line">PASSWORD = <span class="string">'root'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># dialect+driver://username:password@host:port/database</span></span><br><span class="line">DB_URI = <span class="string">"mysql+pymysql://&#123;username&#125;:&#123;password&#125;@&#123;host&#125;:&#123;port&#125;/&#123;db&#125;?charset=utf8"</span>.format(username=USERNAME,password=PASSWORD,host=HOSTNAME,port=PORT,db=DATABASE)</span><br></pre></td></tr></table></figure>
+        <h1 id="SQLALchemy笔记"><a href="#SQLALchemy笔记" class="headerlink" title="SQLALchemy笔记"></a>SQLALchemy笔记</h1><h3 id="使用SQLAlchemy去连接数据库："><a href="#使用SQLAlchemy去连接数据库：" class="headerlink" title="使用SQLAlchemy去连接数据库："></a>使用SQLAlchemy去连接数据库：</h3><p>使用SQLALchemy去连接数据库，需要使用一些配置信息，然后将他们组合成满足条件的字符串：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">HOSTNAME = <span class="string">'127.0.0.1'</span></span><br><span class="line">PORT = <span class="string">'3306'</span></span><br><span class="line">DATABASE = <span class="string">'first_sqlalchemy'</span></span><br><span class="line">USERNAME = <span class="string">'root'</span></span><br><span class="line">PASSWORD = <span class="string">'root'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># dialect+driver://username:password@host:port/database</span></span><br><span class="line">DB_URI = <span class="string">"mysql+pymysql://&#123;username&#125;:&#123;password&#125;@&#123;host&#125;:&#123;port&#125;/&#123;db&#125;?charset=utf8"</span>.format(username=USERNAME,password=PASSWORD,host=HOSTNAME,port=PORT,db=DATABASE)</span><br></pre></td></tr></table></figure><a id="more"></a>
+
 
 <p>然后使用<code>create_engine</code>创建一个引擎<code>engine</code>，然后再调用这个引擎的<code>connect</code>方法，就可以得到这个对象，然后就可以通过这个对象对数据库进行操作了：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">engine = create_engine(DB_URI)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 判断是否连接成功</span></span><br><span class="line">conn = engine.connect()</span><br><span class="line">result = conn.execute(<span class="string">'select 1'</span>)</span><br><span class="line">print(result.fetchone())</span><br></pre></td></tr></table></figure>
